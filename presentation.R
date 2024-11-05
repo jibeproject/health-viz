@@ -7,6 +7,7 @@ library(ggplot2)
 library(esquisse)
 library(dplyr)
 
+## Data baseline year for reference and scenario
 
 directory <- "C:/Users/mbzd2/OneDrive - RMIT University/JIBE/JIBE-WP6/healthmicrosim/"
 
@@ -21,9 +22,19 @@ health_base <- read_csv(paste0(directory, "manchester/simulationResults/ForUrban
 
 
   
-health_intervention <- read_csv("manchester/simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2029.csv")
+health_intervention <- read_csv(paste0(directory,"manchester/simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2029.csv"))
+
+############################ PM2.5, NO2 and mmets ##################################
+
+#Marina to do
 
 
+
+############################ Health ##################################################
+
+## Diseases ###
+## The idea here is to create line graps with y-axis as year and y-axis diseases. Exclude healthy.
+## The data is one row per id. When condition changes the id in fact keeps the original condition and we need reflect this. 
 
 ### Sample data 
 
@@ -31,9 +42,8 @@ health_base_sample <-  head(health_base, 1000)
 
 view(health_base_sample)
 
-# Make sure to replace 'your_data' with the name of your actual data frame
-write.csv(health_base_sample, "manchester/simulationResults/ForUrbanTransition/samples/health_ref.csv", row.names = FALSE)
-
+## Saved to try esquisser
+# write.csv(health_base_sample, "manchester/simulationResults/ForUrbanTransition/samples/health_ref.csv", row.names = FALSE)
 
 ## Data with totals per conditions for all modelled years
 data_long <- health_base_sample %>%
@@ -42,8 +52,7 @@ data_long <- health_base_sample %>%
   group_by(year, condition) %>%
   summarise(count = n(), .groups = 'drop') %>%
   pivot_wider(names_from = condition, values_from = count, values_fill = 0) %>%
-  bind_rows(
-    data_long %>%
+  bind_rows(data_long %>%
       summarise(across(where(is.numeric), sum)) %>%
       mutate(Category = "Total")) %>% 
   filter (year<29) # later replace with simulation years (2050?)
@@ -71,9 +80,6 @@ ggplot(data_plot_years, aes(x = year, y = value, colour = disease)) +
     colour = "Disease"
   )
 
-## Data with total per condition per year
-
-## TO DO
 
 ## TRY to keep condition per id
 
