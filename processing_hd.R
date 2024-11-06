@@ -101,12 +101,15 @@ fv[, cumulative_state := Reduce(function(x, y) paste(y, x, sep = "|"), state, ac
 # Merge cumulative states back to the main dataset
 ur <- merge(ur, fv[, .(id, state, cumulative_state, first_year)], by = c("id", "state"), all.x = TRUE)
 
-# Create a final state column preserving "healthy" where applicable
+# Create a final state column preserving "healthy" where applicable and setting "dead" to "null"
 ur[, final_state := ifelse(
   state == "healthy" | is.na(cumulative_state), 
   state,  # Keep "healthy" or original if cumulative_state is NA
   cumulative_state  # Otherwise use cumulative state
 ), by = id]
+
+# Change any state that includes "dead" to "null"
+ur[, final_state := ifelse(grepl("dead", final_state), "null", final_state)]
 
 # Use dplyr::fill to carry forward cumulative states within each id
 ur <- ur %>%
@@ -125,3 +128,4 @@ health_base_updated[is.na(health_base_updated)] <- health_base[is.na(health_base
 
 # Assign the result back to the original health_base variable if desired
 health_base_plot <- health_base_updated
+
