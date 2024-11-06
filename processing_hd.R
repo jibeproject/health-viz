@@ -6,7 +6,11 @@ library(arrow)
 set.seed(2024)
 
 # Read cycleIntervention health output as an example
+
+### Ali to bring in the fix dataset
 # hd <- read_csv("C:/Users/ajnab/RMIT University/JIBE working group - General/manchester/simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2029.csv")
+### Ali to add cycling intervention health data. 
+
 
 ## Belen folder
 directory <- "C:/Users/mbzd2/OneDrive - RMIT University/JIBE/JIBE-WP6/healthmicrosim/"
@@ -19,65 +23,65 @@ health_base <- read_csv(paste0(directory, "manchester/simulationResults/ForUrban
 # Same for quicker run
 # shd <- hd |> slice_sample(n = 100)
 
-####### Referecen data #######
-
-# Loop through each row
-for (i in 1:nrow(health_base)){
-  # Create a long df for each row
-  ur <- pivot_longer(health_base[i,], cols = -id)
-  # Get a table for each disease state with the first year when it was appeared
-  fv <- ur |> group_by(value) |> summarise(fy = first(name)) |> arrange(fy)
-  # Loop through the first value dataset with first year for the disease appearance
-  for (j in 1:nrow(fv)){
-    # Ignore healty and null states
-    if (!fv$value[j] %in% c("healthy", "null"))
-    {
-      # Do not carry forward the healthy state to any other state
-      if (fv$value[j - 1] != "healthy")
-        # Join previous state with the current one with a | as a separator
-        fv$value[j] <- paste(fv$value[j], fv$value[j - 1], sep = "|")
-    }
-  }
-  # Update the long format for each ID with the new states
-  for (k in 1:nrow(fv)){
-    if (!fv$value[k] %in% c("healthy", "null"))
-        ur[(ur$name >= as.numeric(fv$fy[k]) & ur$name < (as.numeric(fv$fy[k + 1]))),]$value <- fv$value[k]
-  }
-  
-  # Update the states
-  health_base <- rows_update(health_base, pivot_wider(ur, id_cols=id))
-}
-
-
-
-####### Scenario data #######
-
-# Loop through each row
-for (i in 1:nrow(health_intervention)){
-  # Create a long df for each row
-  ur <- pivot_longer(health_intervention[i,], cols = -id)
-  # Get a table for each disease state with the first year when it was appeared
-  fv <- ur |> group_by(value) |> summarise(fy = first(name)) |> arrange(fy)
-  # Loop through the first value dataset with first year for the disease appearance
-  for (j in 1:nrow(fv)){
-    # Ignore healty and null states
-    if (!fv$value[j] %in% c("healthy", "null"))
-    {
-      # Do not carry forward the healthy state to any other state
-      if (fv$value[j - 1] != "healthy")
-        # Join previous state with the current one with a | as a separator
-        fv$value[j] <- paste(fv$value[j], fv$value[j - 1], sep = "|")
-    }
-  }
-  # Update the long format for each ID with the new states
-  for (k in 1:nrow(fv)){
-    if (!fv$value[k] %in% c("healthy", "null"))
-      ur[(ur$name >= as.numeric(fv$fy[k]) & ur$name < (as.numeric(fv$fy[k + 1]))),]$value <- fv$value[k]
-  }
-  
-  # Update the states
-  health_intervention <- rows_update(health_intervention, pivot_wider(ur, id_cols=id))
-}
+# ####### Referecen data #######
+# 
+# # Loop through each row
+# for (i in 1:nrow(health_base)){
+#   # Create a long df for each row
+#   ur <- pivot_longer(health_base[i,], cols = -id)
+#   # Get a table for each disease state with the first year when it was appeared
+#   fv <- ur |> group_by(value) |> summarise(fy = first(name)) |> arrange(fy)
+#   # Loop through the first value dataset with first year for the disease appearance
+#   for (j in 1:nrow(fv)){
+#     # Ignore healty and null states
+#     if (!fv$value[j] %in% c("healthy", "null"))
+#     {
+#       # Do not carry forward the healthy state to any other state
+#       if (fv$value[j - 1] != "healthy")
+#         # Join previous state with the current one with a | as a separator
+#         fv$value[j] <- paste(fv$value[j], fv$value[j - 1], sep = "|")
+#     }
+#   }
+#   # Update the long format for each ID with the new states
+#   for (k in 1:nrow(fv)){
+#     if (!fv$value[k] %in% c("healthy", "null"))
+#         ur[(ur$name >= as.numeric(fv$fy[k]) & ur$name < (as.numeric(fv$fy[k + 1]))),]$value <- fv$value[k]
+#   }
+#   
+#   # Update the states
+#   health_base <- rows_update(health_base, pivot_wider(ur, id_cols=id))
+# }
+# 
+# 
+# 
+# ####### Scenario data #######
+# 
+# # Loop through each row
+# for (i in 1:nrow(health_intervention)){
+#   # Create a long df for each row
+#   ur <- pivot_longer(health_intervention[i,], cols = -id)
+#   # Get a table for each disease state with the first year when it was appeared
+#   fv <- ur |> group_by(value) |> summarise(fy = first(name)) |> arrange(fy)
+#   # Loop through the first value dataset with first year for the disease appearance
+#   for (j in 1:nrow(fv)){
+#     # Ignore healty and null states
+#     if (!fv$value[j] %in% c("healthy", "null"))
+#     {
+#       # Do not carry forward the healthy state to any other state
+#       if (fv$value[j - 1] != "healthy")
+#         # Join previous state with the current one with a | as a separator
+#         fv$value[j] <- paste(fv$value[j], fv$value[j - 1], sep = "|")
+#     }
+#   }
+#   # Update the long format for each ID with the new states
+#   for (k in 1:nrow(fv)){
+#     if (!fv$value[k] %in% c("healthy", "null"))
+#       ur[(ur$name >= as.numeric(fv$fy[k]) & ur$name < (as.numeric(fv$fy[k + 1]))),]$value <- fv$value[k]
+#   }
+#   
+#   # Update the states
+#   health_intervention <- rows_update(health_intervention, pivot_wider(ur, id_cols=id))
+# }
 
 
 ### Optimised version
@@ -86,6 +90,8 @@ library(data.table)
 library(dplyr)
 
 # Convert health_base to data.table for fast processing
+
+
 health_base_dt <- as.data.table(health_base)
 
 # Melt (pivot_longer) the entire dataset once to create the long format
@@ -127,5 +133,5 @@ health_base_updated <- dcast(setDT(ur), id ~ year, value.var = "final_state")
 health_base_updated[is.na(health_base_updated)] <- health_base[is.na(health_base_updated)]
 
 # Assign the result back to the original health_base variable if desired
-health_base_plot <- health_base_updated
+health_base_plot <- as.data.frame(health_base_updated)
 
