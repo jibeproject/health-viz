@@ -97,15 +97,19 @@ ggplot(states_cyc_freq) +
 
 combine_summary <- bind_rows(states_base_sum, states_cyc_sum) |> mutate(scenario = factor(scenario, levels = c("reference", "cycling intervention")))
 
-plotly::ggplotly(combine_summary %>%
-  filter(freq >= 2L & freq <= 85L) %>%
+plotly::ggplotly(
+  
+  combine_summary |> 
+  filter(freq >= 1L) |> 
   ggplot() +
   aes(x = name, y = freq, fill = scenario) +
   geom_col(position = "dodge2") +
   scale_fill_hue(direction = 1) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90L)) +
-  facet_wrap(vars(value)))
+  facet_wrap(vars(value))
+  
+  )
 
 tbl <- combine_summary |> filter(!value %in% c("dead", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
 
