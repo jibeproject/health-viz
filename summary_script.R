@@ -99,15 +99,18 @@ combine_summary <- bind_rows(states_base_sum, states_cyc_sum) |> mutate(scenario
 
 plotly::ggplotly(
   
-  combine_summary |> 
-  filter(freq >= 1L) |> 
-  ggplot() +
-  aes(x = name, y = freq, fill = scenario) +
-  geom_col(position = "dodge2") +
-  scale_fill_hue(direction = 1) +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 90L)) +
-  facet_wrap(vars(value))
+  combine_summary %>%
+    filter(freq >= 2) %>%
+    ggplot() +
+    aes(x = name, y = nv, fill = scenario) +
+    geom_bar(stat = "summary", fun = "sum", position = "dodge2") +
+    scale_fill_hue(direction = 1) +
+    coord_flip() +
+    theme_minimal() +
+    geom_text(aes(label = nv),
+              position = position_dodge(width = .9), size = 2) +
+    facet_wrap(vars(value)) +  
+    labs(x = "diseases", y = "values")
   
   )
 
