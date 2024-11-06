@@ -8,7 +8,7 @@ set.seed(1024)
 
 health_base <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv")
 
-health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv")
+health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_processed.csv")
 
 # Set sample size
 sample_size <- 10000
