@@ -109,9 +109,7 @@ plotly::ggplotly(combine_summary %>%
 
 tbl <- combine_summary |> filter(!value %in% c("dead", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
 
-g <- 
-  
-  ggplot(tbl) +
+g <- ggplot(tbl) +
   aes(x = name, y = count, fill = scenario) +
   geom_col(position = "dodge2") +
   scale_fill_hue(direction = 1) +
@@ -122,6 +120,6 @@ g <-
   ) +
   theme_minimal() +
   geom_text(aes(label = count),
-    position = position_dodge(width = .9))
+    position = position_dodge(width = .9), angle=90)
 
 plotly::ggplotly(g)
