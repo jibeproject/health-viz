@@ -3,6 +3,7 @@
 
 
 library(tidyverse)
+require(tictoc)
 # Set seed
 set.seed(1024)
 
@@ -11,7 +12,7 @@ health_base <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simul
 health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_processed.csv")
 
 # Set sample size
-sample_size <- 10000
+sample_size <- 100000
 
 # Keep until 2039
 health_base <- health_base |> dplyr::select(1:21) |> slice_sample(n = sample_size)
@@ -29,9 +30,11 @@ get_expanded_rows <- function(health_base_fr){
 }
 
 
+tic()
 # Expand each row separated by | character
 health_base_summary <- get_expanded_rows(health_base)
 
+toc()
 
 # Expand each row separated by | character
 health_cyc_summary <- get_expanded_rows(health_cyc)
@@ -90,7 +93,7 @@ ggplot(states_cyc_freq) +
 
 combine_summary <- bind_rows(states_base_sum, states_cyc_sum) |> mutate(scenario = factor(scenario, levels = c("reference", "cycling intervention")))
 
-combine_summary %>%
+plotly::ggplotly(combine_summary %>%
   filter(freq >= 2L & freq <= 85L) %>%
   ggplot() +
   aes(x = name, y = freq, fill = scenario) +
@@ -98,5 +101,6 @@ combine_summary %>%
   scale_fill_hue(direction = 1) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90L)) +
-  facet_wrap(vars(value))
+  facet_wrap(vars(value)))
 
+tbl <- combine_summary |> filter(value %in% c("healty", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
