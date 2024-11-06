@@ -9,16 +9,25 @@ set.seed(1024)
 
 health_base <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv")
 
-health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_processed.csv")
+health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_fixBug_processed.csv")
 
 # Set sample size
-sample_size <- 100000
+sample_size <- 1000000
 
 # Keep until 2039
-health_base <- health_base |> dplyr::select(1:21) |> slice_sample(n = sample_size)
+health_base <- health_base |> dplyr::select(1:21) #|> slice_sample(n = sample_size)
+
+health_base_dead <- health_base |> pivot_longer(cols = -id) |> filter(str_detect(value, "dead")) |> mutate(value = "dead") |> pivot_wider(id_cols=id)
+
+health_base <- rows_update(health_base, health_base_dead)
 
 # Keep until 2039
-health_cyc <- health_cyc |> dplyr::select(1:21) |> slice_sample(n = sample_size)
+health_cyc <- health_cyc |> dplyr::select(1:21) #|> slice_sample(n = sample_size)
+
+health_cyc_dead <- health_cyc |> pivot_longer(cols = -id) |> filter(str_detect(value, "dead")) |> mutate(value = "dead") |> pivot_wider(id_cols=id)
+
+health_cyc <- rows_update(health_cyc, health_cyc_dead)
+
 
 get_expanded_rows <- function(health_base_fr){
   health_base_fr |> 
@@ -30,20 +39,16 @@ get_expanded_rows <- function(health_base_fr){
 }
 
 
-tic()
 # Expand each row separated by | character
 health_base_summary <- get_expanded_rows(health_base)
-
-toc()
 
 # Expand each row separated by | character
 health_cyc_summary <- get_expanded_rows(health_cyc)
 
 # States
-states_base_sum <- health_base_summary |> 
+states_base_sum <- health_base_summary |> filter(!is.na(value) & !value %in% c("dead", "null")) |> 
   group_by(name, value)|> 
-  summarise(nv = dplyr::n(), 
-            freq = round(100 * nv / sample_size, 1), scenario = "reference")
+  summarise(nv = dplyr::n(), scenario = "reference") |> mutate(sumnv = sum(nv), freq = round(100 * nv / sumnv, 1))
 
 
 ggplot(states_base_sum) +
@@ -67,10 +72,9 @@ ggplot(states_base_freq) +
 
 
 # States
-states_cyc_sum <- health_cyc_summary |> 
+states_cyc_sum <- health_cyc_summary |> filter(!is.na(value) & !value %in% c("dead", "null")) |> 
   group_by(name, value)|> 
-  summarise(nv = dplyr::n(), 
-            freq = round(100 * nv / sample_size, 1), scenario = "cycling intervention")
+  summarise(nv = dplyr::n(), scenario = "cycling intervention") |> mutate(sumnv = sum(nv), freq = round(100 * nv / sumnv, 1)) 
 
 
 ggplot(states_cyc_sum) +
@@ -103,9 +107,11 @@ plotly::ggplotly(combine_summary %>%
   theme(axis.text.x = element_text(angle = 90L)) +
   facet_wrap(vars(value)))
 
-tbl <- combine_summary |> filter(value %in% c("healty", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
+tbl <- combine_summary |> filter(!value %in% c("dead", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
 
-ggplot(tbl) +
+g <- 
+  
+  ggplot(tbl) +
   aes(x = name, y = count, fill = scenario) +
   geom_col(position = "dodge2") +
   scale_fill_hue(direction = 1) +
@@ -114,4 +120,8 @@ ggplot(tbl) +
     y = "Count",
     title = "Cumulative alive people over time"
   ) +
-  theme_minimal()
+  theme_minimal() +
+  geom_text(aes(label = count),
+    position = position_dodge(width = .9))
+
+plotly::ggplotly(g)
