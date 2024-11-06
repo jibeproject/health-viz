@@ -104,3 +104,14 @@ plotly::ggplotly(combine_summary %>%
   facet_wrap(vars(value)))
 
 tbl <- combine_summary |> filter(value %in% c("healty", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
+
+ggplot(tbl) +
+  aes(x = name, y = count, fill = scenario) +
+  geom_col(position = "dodge2") +
+  scale_fill_hue(direction = 1) +
+  labs(
+    x = "Simulation year",
+    y = "Count",
+    title = "Cumulative alive people over time"
+  ) +
+  theme_minimal()

@@ -1,0 +1,801 @@
+name,value,nv,freq,scenario
+2020,healthy,83911,83.9,reference
+2020,null,16089,16.1,reference
+2021,all_cause_dementia,232,0.2,reference
+2021,bladder_cancer,33,0,reference
+2021,breast_cancer,109,0.1,reference
+2021,colon_cancer,125,0.1,reference
+2021,copd,675,0.7,reference
+2021,coronary_heart_disease,297,0.3,reference
+2021,dead,772,0.8,reference
+2021,depression,6248,6.2,reference
+2021,diabetes,305,0.3,reference
+2021,endometrial_cancer,29,0,reference
+2021,esophageal_cancer,25,0,reference
+2021,gastric_cardia_cancer,19,0,reference
+2021,head_neck_cancer,26,0,reference
+2021,healthy,75802,75.8,reference
+2021,liver_cancer,20,0,reference
+2021,lung_cancer,104,0.1,reference
+2021,myeloma,13,0,reference
+2021,null,15112,15.1,reference
+2021,parkinson,42,0,reference
+2021,stroke,139,0.1,reference
+2022,all_cause_dementia,466,0.5,reference
+2022,bladder_cancer,56,0.1,reference
+2022,breast_cancer,202,0.2,reference
+2022,colon_cancer,202,0.2,reference
+2022,copd,1227,1.2,reference
+2022,coronary_heart_disease,575,0.6,reference
+2022,dead,1238,1.2,reference
+2022,depression,11733,11.7,reference
+2022,diabetes,583,0.6,reference
+2022,endometrial_cancer,46,0,reference
+2022,esophageal_cancer,51,0.1,reference
+2022,gastric_cardia_cancer,29,0,reference
+2022,head_neck_cancer,53,0.1,reference
+2022,healthy,68880,68.9,reference
+2022,liver_cancer,39,0,reference
+2022,lung_cancer,217,0.2,reference
+2022,myeloma,22,0,reference
+2022,null,14454,14.5,reference
+2022,parkinson,90,0.1,reference
+2022,stroke,283,0.3,reference
+2023,all_cause_dementia,679,0.7,reference
+2023,bladder_cancer,75,0.1,reference
+2023,breast_cancer,275,0.3,reference
+2023,colon_cancer,267,0.3,reference
+2023,copd,1774,1.8,reference
+2023,coronary_heart_disease,830,0.8,reference
+2023,dead,1651,1.7,reference
+2023,depression,16746,16.7,reference
+2023,diabetes,873,0.9,reference
+2023,endometrial_cancer,57,0.1,reference
+2023,esophageal_cancer,74,0.1,reference
+2023,gastric_cardia_cancer,43,0,reference
+2023,head_neck_cancer,70,0.1,reference
+2023,healthy,62708,62.7,reference
+2023,liver_cancer,53,0.1,reference
+2023,lung_cancer,297,0.3,reference
+2023,myeloid_leukemia,1,0,reference
+2023,myeloma,34,0,reference
+2023,null,13843,13.8,reference
+2023,parkinson,120,0.1,reference
+2023,stroke,427,0.4,reference
+2024,all_cause_dementia,873,0.9,reference
+2024,bladder_cancer,105,0.1,reference
+2024,breast_cancer,364,0.4,reference
+2024,colon_cancer,357,0.4,reference
+2024,copd,2249,2.2,reference
+2024,coronary_heart_disease,1063,1.1,reference
+2024,dead,2218,2.2,reference
+2024,depression,21228,21.2,reference
+2024,diabetes,1160,1.2,reference
+2024,endometrial_cancer,70,0.1,reference
+2024,esophageal_cancer,92,0.1,reference
+2024,gastric_cardia_cancer,54,0.1,reference
+2024,head_neck_cancer,87,0.1,reference
+2024,healthy,57285,57.3,reference
+2024,liver_cancer,62,0.1,reference
+2024,lung_cancer,369,0.4,reference
+2024,myeloid_leukemia,5,0,reference
+2024,myeloma,47,0,reference
+2024,null,13082,13.1,reference
+2024,parkinson,142,0.1,reference
+2024,stroke,555,0.6,reference
+2025,all_cause_dementia,1067,1.1,reference
+2025,bladder_cancer,119,0.1,reference
+2025,breast_cancer,427,0.4,reference
+2025,colon_cancer,452,0.5,reference
+2025,copd,2752,2.8,reference
+2025,coronary_heart_disease,1288,1.3,reference
+2025,dead,2698,2.7,reference
+2025,depression,25227,25.2,reference
+2025,diabetes,1416,1.4,reference
+2025,endometrial_cancer,92,0.1,reference
+2025,esophageal_cancer,99,0.1,reference
+2025,gastric_cardia_cancer,60,0.1,reference
+2025,head_neck_cancer,100,0.1,reference
+2025,healthy,52549,52.5,reference
+2025,liver_cancer,74,0.1,reference
+2025,lung_cancer,444,0.4,reference
+2025,myeloid_leukemia,5,0,reference
+2025,myeloma,54,0.1,reference
+2025,null,12425,12.4,reference
+2025,parkinson,174,0.2,reference
+2025,stroke,677,0.7,reference
+2026,all_cause_dementia,1270,1.3,reference
+2026,bladder_cancer,144,0.1,reference
+2026,breast_cancer,514,0.5,reference
+2026,colon_cancer,520,0.5,reference
+2026,copd,3220,3.2,reference
+2026,coronary_heart_disease,1494,1.5,reference
+2026,dead,3278,3.3,reference
+2026,depression,28821,28.8,reference
+2026,diabetes,1626,1.6,reference
+2026,endometrial_cancer,104,0.1,reference
+2026,esophageal_cancer,116,0.1,reference
+2026,gastric_cardia_cancer,68,0.1,reference
+2026,head_neck_cancer,125,0.1,reference
+2026,healthy,48373,48.4,reference
+2026,liver_cancer,88,0.1,reference
+2026,lung_cancer,500,0.5,reference
+2026,myeloid_leukemia,5,0,reference
+2026,myeloma,55,0.1,reference
+2026,null,11766,11.8,reference
+2026,parkinson,219,0.2,reference
+2026,stroke,772,0.8,reference
+2027,all_cause_dementia,1443,1.4,reference
+2027,bladder_cancer,165,0.2,reference
+2027,breast_cancer,609,0.6,reference
+2027,colon_cancer,599,0.6,reference
+2027,copd,3679,3.7,reference
+2027,coronary_heart_disease,1717,1.7,reference
+2027,dead,3836,3.8,reference
+2027,depression,32089,32.1,reference
+2027,diabetes,1878,1.9,reference
+2027,endometrial_cancer,124,0.1,reference
+2027,esophageal_cancer,134,0.1,reference
+2027,gastric_cardia_cancer,81,0.1,reference
+2027,head_neck_cancer,136,0.1,reference
+2027,healthy,44562,44.6,reference
+2027,liver_cancer,100,0.1,reference
+2027,lung_cancer,558,0.6,reference
+2027,myeloid_leukemia,8,0,reference
+2027,myeloma,59,0.1,reference
+2027,null,11116,11.1,reference
+2027,parkinson,249,0.2,reference
+2027,stroke,890,0.9,reference
+2028,all_cause_dementia,1652,1.7,reference
+2028,bladder_cancer,188,0.2,reference
+2028,breast_cancer,663,0.7,reference
+2028,colon_cancer,663,0.7,reference
+2028,copd,4124,4.1,reference
+2028,coronary_heart_disease,1930,1.9,reference
+2028,dead,4437,4.4,reference
+2028,depression,35019,35,reference
+2028,diabetes,2079,2.1,reference
+2028,endometrial_cancer,147,0.1,reference
+2028,esophageal_cancer,149,0.1,reference
+2028,gastric_cardia_cancer,94,0.1,reference
+2028,head_neck_cancer,157,0.2,reference
+2028,healthy,41367,41.4,reference
+2028,liver_cancer,118,0.1,reference
+2028,lung_cancer,615,0.6,reference
+2028,myeloid_leukemia,11,0,reference
+2028,myeloma,74,0.1,reference
+2028,null,10441,10.4,reference
+2028,parkinson,288,0.3,reference
+2028,stroke,996,1,reference
+2029,all_cause_dementia,1803,1.8,reference
+2029,bladder_cancer,210,0.2,reference
+2029,breast_cancer,713,0.7,reference
+2029,colon_cancer,757,0.8,reference
+2029,copd,4566,4.6,reference
+2029,coronary_heart_disease,2108,2.1,reference
+2029,dead,5087,5.1,reference
+2029,depression,37699,37.7,reference
+2029,diabetes,2279,2.3,reference
+2029,endometrial_cancer,166,0.2,reference
+2029,esophageal_cancer,168,0.2,reference
+2029,gastric_cardia_cancer,113,0.1,reference
+2029,head_neck_cancer,186,0.2,reference
+2029,healthy,38540,38.5,reference
+2029,liver_cancer,128,0.1,reference
+2029,lung_cancer,681,0.7,reference
+2029,myeloid_leukemia,11,0,reference
+2029,myeloma,86,0.1,reference
+2029,null,9747,9.7,reference
+2029,parkinson,319,0.3,reference
+2029,stroke,1086,1.1,reference
+2030,all_cause_dementia,1953,2,reference
+2030,bladder_cancer,233,0.2,reference
+2030,breast_cancer,787,0.8,reference
+2030,colon_cancer,832,0.8,reference
+2030,copd,4951,5,reference
+2030,coronary_heart_disease,2335,2.3,reference
+2030,dead,5728,5.7,reference
+2030,depression,40158,40.2,reference
+2030,diabetes,2495,2.5,reference
+2030,endometrial_cancer,175,0.2,reference
+2030,esophageal_cancer,191,0.2,reference
+2030,gastric_cardia_cancer,122,0.1,reference
+2030,head_neck_cancer,200,0.2,reference
+2030,healthy,35990,36,reference
+2030,liver_cancer,144,0.1,reference
+2030,lung_cancer,749,0.7,reference
+2030,myeloid_leukemia,11,0,reference
+2030,myeloma,96,0.1,reference
+2030,null,9129,9.1,reference
+2030,parkinson,353,0.4,reference
+2030,stroke,1204,1.2,reference
+2031,all_cause_dementia,2150,2.1,reference
+2031,bladder_cancer,253,0.3,reference
+2031,breast_cancer,835,0.8,reference
+2031,colon_cancer,916,0.9,reference
+2031,copd,5338,5.3,reference
+2031,coronary_heart_disease,2508,2.5,reference
+2031,dead,6399,6.4,reference
+2031,depression,42401,42.4,reference
+2031,diabetes,2663,2.7,reference
+2031,endometrial_cancer,190,0.2,reference
+2031,esophageal_cancer,208,0.2,reference
+2031,gastric_cardia_cancer,134,0.1,reference
+2031,head_neck_cancer,218,0.2,reference
+2031,healthy,33791,33.8,reference
+2031,liver_cancer,153,0.2,reference
+2031,lung_cancer,815,0.8,reference
+2031,myeloid_leukemia,13,0,reference
+2031,myeloma,110,0.1,reference
+2031,null,8499,8.5,reference
+2031,parkinson,386,0.4,reference
+2031,stroke,1273,1.3,reference
+2032,all_cause_dementia,2266,2.3,reference
+2032,bladder_cancer,274,0.3,reference
+2032,breast_cancer,895,0.9,reference
+2032,colon_cancer,973,1,reference
+2032,copd,5745,5.7,reference
+2032,coronary_heart_disease,2676,2.7,reference
+2032,dead,7093,7.1,reference
+2032,depression,44351,44.4,reference
+2032,diabetes,2841,2.8,reference
+2032,endometrial_cancer,198,0.2,reference
+2032,esophageal_cancer,228,0.2,reference
+2032,gastric_cardia_cancer,135,0.1,reference
+2032,head_neck_cancer,230,0.2,reference
+2032,healthy,31870,31.9,reference
+2032,liver_cancer,166,0.2,reference
+2032,lung_cancer,893,0.9,reference
+2032,myeloid_leukemia,12,0,reference
+2032,myeloma,115,0.1,reference
+2032,null,7926,7.9,reference
+2032,parkinson,419,0.4,reference
+2032,stroke,1412,1.4,reference
+2033,all_cause_dementia,2437,2.4,reference
+2033,bladder_cancer,291,0.3,reference
+2033,breast_cancer,964,1,reference
+2033,colon_cancer,1049,1,reference
+2033,copd,6149,6.1,reference
+2033,coronary_heart_disease,2835,2.8,reference
+2033,dead,7802,7.8,reference
+2033,depression,46253,46.3,reference
+2033,diabetes,3025,3,reference
+2033,endometrial_cancer,209,0.2,reference
+2033,esophageal_cancer,246,0.2,reference
+2033,gastric_cardia_cancer,148,0.1,reference
+2033,head_neck_cancer,245,0.2,reference
+2033,healthy,30142,30.1,reference
+2033,liver_cancer,184,0.2,reference
+2033,lung_cancer,945,0.9,reference
+2033,myeloid_leukemia,15,0,reference
+2033,myeloma,123,0.1,reference
+2033,null,7373,7.4,reference
+2033,parkinson,445,0.4,reference
+2033,stroke,1529,1.5,reference
+2034,all_cause_dementia,2616,2.6,reference
+2034,bladder_cancer,312,0.3,reference
+2034,breast_cancer,1020,1,reference
+2034,colon_cancer,1099,1.1,reference
+2034,copd,6499,6.5,reference
+2034,coronary_heart_disease,3001,3,reference
+2034,dead,8577,8.6,reference
+2034,depression,48001,48,reference
+2034,diabetes,3180,3.2,reference
+2034,endometrial_cancer,225,0.2,reference
+2034,esophageal_cancer,268,0.3,reference
+2034,gastric_cardia_cancer,156,0.2,reference
+2034,head_neck_cancer,266,0.3,reference
+2034,healthy,28677,28.7,reference
+2034,liver_cancer,200,0.2,reference
+2034,lung_cancer,994,1,reference
+2034,myeloid_leukemia,17,0,reference
+2034,myeloma,128,0.1,reference
+2034,null,6703,6.7,reference
+2034,parkinson,474,0.5,reference
+2034,stroke,1606,1.6,reference
+2035,all_cause_dementia,2771,2.8,reference
+2035,bladder_cancer,331,0.3,reference
+2035,breast_cancer,1074,1.1,reference
+2035,colon_cancer,1190,1.2,reference
+2035,copd,6830,6.8,reference
+2035,coronary_heart_disease,3173,3.2,reference
+2035,dead,9331,9.3,reference
+2035,depression,49554,49.6,reference
+2035,diabetes,3335,3.3,reference
+2035,endometrial_cancer,245,0.2,reference
+2035,esophageal_cancer,289,0.3,reference
+2035,gastric_cardia_cancer,164,0.2,reference
+2035,head_neck_cancer,285,0.3,reference
+2035,healthy,27418,27.4,reference
+2035,liver_cancer,205,0.2,reference
+2035,lung_cancer,1070,1.1,reference
+2035,myeloid_leukemia,17,0,reference
+2035,myeloma,135,0.1,reference
+2035,null,6105,6.1,reference
+2035,parkinson,496,0.5,reference
+2035,stroke,1694,1.7,reference
+2036,all_cause_dementia,2923,2.9,reference
+2036,bladder_cancer,358,0.4,reference
+2036,breast_cancer,1138,1.1,reference
+2036,colon_cancer,1250,1.2,reference
+2036,copd,7160,7.2,reference
+2036,coronary_heart_disease,3339,3.3,reference
+2036,dead,10099,10.1,reference
+2036,depression,50993,51,reference
+2036,diabetes,3517,3.5,reference
+2036,endometrial_cancer,254,0.3,reference
+2036,esophageal_cancer,301,0.3,reference
+2036,gastric_cardia_cancer,176,0.2,reference
+2036,head_neck_cancer,302,0.3,reference
+2036,healthy,26300,26.3,reference
+2036,liver_cancer,216,0.2,reference
+2036,lung_cancer,1136,1.1,reference
+2036,myeloid_leukemia,17,0,reference
+2036,myeloma,137,0.1,reference
+2036,null,5532,5.5,reference
+2036,parkinson,522,0.5,reference
+2036,stroke,1815,1.8,reference
+2037,all_cause_dementia,3091,3.1,reference
+2037,bladder_cancer,373,0.4,reference
+2037,breast_cancer,1219,1.2,reference
+2037,colon_cancer,1311,1.3,reference
+2037,copd,7496,7.5,reference
+2037,coronary_heart_disease,3555,3.6,reference
+2037,dead,10837,10.8,reference
+2037,depression,52352,52.4,reference
+2037,diabetes,3686,3.7,reference
+2037,endometrial_cancer,263,0.3,reference
+2037,esophageal_cancer,318,0.3,reference
+2037,gastric_cardia_cancer,181,0.2,reference
+2037,head_neck_cancer,313,0.3,reference
+2037,healthy,25382,25.4,reference
+2037,liver_cancer,239,0.2,reference
+2037,lung_cancer,1191,1.2,reference
+2037,myeloid_leukemia,16,0,reference
+2037,myeloma,141,0.1,reference
+2037,null,4930,4.9,reference
+2037,parkinson,557,0.6,reference
+2037,stroke,1899,1.9,reference
+2038,all_cause_dementia,3265,3.3,reference
+2038,bladder_cancer,398,0.4,reference
+2038,breast_cancer,1280,1.3,reference
+2038,colon_cancer,1363,1.4,reference
+2038,copd,7886,7.9,reference
+2038,coronary_heart_disease,3715,3.7,reference
+2038,dead,11568,11.6,reference
+2038,depression,53569,53.6,reference
+2038,diabetes,3827,3.8,reference
+2038,endometrial_cancer,268,0.3,reference
+2038,esophageal_cancer,343,0.3,reference
+2038,gastric_cardia_cancer,196,0.2,reference
+2038,head_neck_cancer,329,0.3,reference
+2038,healthy,24684,24.7,reference
+2038,liver_cancer,252,0.3,reference
+2038,lung_cancer,1263,1.3,reference
+2038,myeloid_leukemia,16,0,reference
+2038,myeloma,154,0.2,reference
+2038,null,4269,4.3,reference
+2038,parkinson,579,0.6,reference
+2038,stroke,1995,2,reference
+2039,all_cause_dementia,3452,3.5,reference
+2039,bladder_cancer,410,0.4,reference
+2039,breast_cancer,1352,1.4,reference
+2039,colon_cancer,1431,1.4,reference
+2039,copd,8227,8.2,reference
+2039,coronary_heart_disease,3898,3.9,reference
+2039,dead,12437,12.4,reference
+2039,depression,54621,54.6,reference
+2039,diabetes,3987,4,reference
+2039,endometrial_cancer,275,0.3,reference
+2039,esophageal_cancer,371,0.4,reference
+2039,gastric_cardia_cancer,204,0.2,reference
+2039,head_neck_cancer,347,0.3,reference
+2039,healthy,24053,24.1,reference
+2039,liver_cancer,263,0.3,reference
+2039,lung_cancer,1366,1.4,reference
+2039,myeloid_leukemia,17,0,reference
+2039,myeloma,161,0.2,reference
+2039,null,3625,3.6,reference
+2039,parkinson,598,0.6,reference
+2039,stroke,2092,2.1,reference
+2020,healthy,83936,83.9,cycling intervention
+2020,null,16064,16.1,cycling intervention
+2021,all_cause_dementia,253,0.3,cycling intervention
+2021,bladder_cancer,33,0,cycling intervention
+2021,breast_cancer,120,0.1,cycling intervention
+2021,colon_cancer,110,0.1,cycling intervention
+2021,copd,611,0.6,cycling intervention
+2021,coronary_heart_disease,294,0.3,cycling intervention
+2021,dead,826,0.8,cycling intervention
+2021,depression,6323,6.3,cycling intervention
+2021,diabetes,360,0.4,cycling intervention
+2021,endometrial_cancer,37,0,cycling intervention
+2021,esophageal_cancer,29,0,cycling intervention
+2021,gastric_cardia_cancer,12,0,cycling intervention
+2021,head_neck_cancer,27,0,cycling intervention
+2021,healthy,75403,75.4,cycling intervention
+2021,liver_cancer,20,0,cycling intervention
+2021,lung_cancer,105,0.1,cycling intervention
+2021,myeloid_leukemia,1,0,cycling intervention
+2021,myeloma,16,0,cycling intervention
+2021,null,15375,15.4,cycling intervention
+2021,parkinson,40,0,cycling intervention
+2021,stroke,141,0.1,cycling intervention
+2022,all_cause_dementia,501,0.5,cycling intervention
+2022,bladder_cancer,60,0.1,cycling intervention
+2022,breast_cancer,214,0.2,cycling intervention
+2022,colon_cancer,187,0.2,cycling intervention
+2022,copd,1252,1.3,cycling intervention
+2022,coronary_heart_disease,569,0.6,cycling intervention
+2022,dead,1311,1.3,cycling intervention
+2022,depression,12069,12.1,cycling intervention
+2022,diabetes,668,0.7,cycling intervention
+2022,endometrial_cancer,61,0.1,cycling intervention
+2022,esophageal_cancer,57,0.1,cycling intervention
+2022,gastric_cardia_cancer,24,0,cycling intervention
+2022,head_neck_cancer,50,0,cycling intervention
+2022,healthy,67659,67.7,cycling intervention
+2022,liver_cancer,31,0,cycling intervention
+2022,lung_cancer,203,0.2,cycling intervention
+2022,myeloid_leukemia,4,0,cycling intervention
+2022,myeloma,23,0,cycling intervention
+2022,null,15185,15.2,cycling intervention
+2022,parkinson,74,0.1,cycling intervention
+2022,stroke,280,0.3,cycling intervention
+2023,all_cause_dementia,756,0.8,cycling intervention
+2023,bladder_cancer,97,0.1,cycling intervention
+2023,breast_cancer,308,0.3,cycling intervention
+2023,colon_cancer,279,0.3,cycling intervention
+2023,copd,1809,1.8,cycling intervention
+2023,coronary_heart_disease,845,0.8,cycling intervention
+2023,dead,1752,1.8,cycling intervention
+2023,depression,17181,17.2,cycling intervention
+2023,diabetes,951,1,cycling intervention
+2023,endometrial_cancer,85,0.1,cycling intervention
+2023,esophageal_cancer,72,0.1,cycling intervention
+2023,gastric_cardia_cancer,35,0,cycling intervention
+2023,head_neck_cancer,80,0.1,cycling intervention
+2023,healthy,60731,60.7,cycling intervention
+2023,liver_cancer,45,0,cycling intervention
+2023,lung_cancer,281,0.3,cycling intervention
+2023,myeloid_leukemia,4,0,cycling intervention
+2023,myeloma,34,0,cycling intervention
+2023,null,15084,15.1,cycling intervention
+2023,parkinson,117,0.1,cycling intervention
+2023,stroke,420,0.4,cycling intervention
+2024,all_cause_dementia,962,1,cycling intervention
+2024,bladder_cancer,121,0.1,cycling intervention
+2024,breast_cancer,399,0.4,cycling intervention
+2024,colon_cancer,383,0.4,cycling intervention
+2024,copd,2373,2.4,cycling intervention
+2024,coronary_heart_disease,1093,1.1,cycling intervention
+2024,dead,2254,2.3,cycling intervention
+2024,depression,21803,21.8,cycling intervention
+2024,diabetes,1181,1.2,cycling intervention
+2024,endometrial_cancer,101,0.1,cycling intervention
+2024,esophageal_cancer,105,0.1,cycling intervention
+2024,gastric_cardia_cancer,46,0,cycling intervention
+2024,head_neck_cancer,107,0.1,cycling intervention
+2024,healthy,54515,54.5,cycling intervention
+2024,liver_cancer,55,0.1,cycling intervention
+2024,lung_cancer,379,0.4,cycling intervention
+2024,myeloid_leukemia,4,0,cycling intervention
+2024,myeloma,42,0,cycling intervention
+2024,null,14969,15,cycling intervention
+2024,parkinson,153,0.2,cycling intervention
+2024,stroke,549,0.5,cycling intervention
+2025,all_cause_dementia,1133,1.1,cycling intervention
+2025,bladder_cancer,145,0.1,cycling intervention
+2025,breast_cancer,499,0.5,cycling intervention
+2025,colon_cancer,477,0.5,cycling intervention
+2025,copd,2982,3,cycling intervention
+2025,coronary_heart_disease,1316,1.3,cycling intervention
+2025,dead,2848,2.8,cycling intervention
+2025,depression,25897,25.9,cycling intervention
+2025,diabetes,1470,1.5,cycling intervention
+2025,endometrial_cancer,118,0.1,cycling intervention
+2025,esophageal_cancer,135,0.1,cycling intervention
+2025,gastric_cardia_cancer,57,0.1,cycling intervention
+2025,head_neck_cancer,129,0.1,cycling intervention
+2025,healthy,48839,48.8,cycling intervention
+2025,liver_cancer,64,0.1,cycling intervention
+2025,lung_cancer,478,0.5,cycling intervention
+2025,myeloid_leukemia,4,0,cycling intervention
+2025,myeloma,50,0,cycling intervention
+2025,null,14862,14.9,cycling intervention
+2025,parkinson,187,0.2,cycling intervention
+2025,stroke,675,0.7,cycling intervention
+2026,all_cause_dementia,1357,1.4,cycling intervention
+2026,bladder_cancer,165,0.2,cycling intervention
+2026,breast_cancer,589,0.6,cycling intervention
+2026,colon_cancer,568,0.6,cycling intervention
+2026,copd,3524,3.5,cycling intervention
+2026,coronary_heart_disease,1528,1.5,cycling intervention
+2026,dead,3422,3.4,cycling intervention
+2026,depression,29744,29.7,cycling intervention
+2026,diabetes,1683,1.7,cycling intervention
+2026,endometrial_cancer,137,0.1,cycling intervention
+2026,esophageal_cancer,151,0.2,cycling intervention
+2026,gastric_cardia_cancer,77,0.1,cycling intervention
+2026,head_neck_cancer,158,0.2,cycling intervention
+2026,healthy,43509,43.5,cycling intervention
+2026,liver_cancer,87,0.1,cycling intervention
+2026,lung_cancer,568,0.6,cycling intervention
+2026,myeloid_leukemia,5,0,cycling intervention
+2026,myeloma,60,0.1,cycling intervention
+2026,null,14913,14.9,cycling intervention
+2026,parkinson,219,0.2,cycling intervention
+2026,stroke,786,0.8,cycling intervention
+2027,all_cause_dementia,1529,1.5,cycling intervention
+2027,bladder_cancer,199,0.2,cycling intervention
+2027,breast_cancer,651,0.7,cycling intervention
+2027,colon_cancer,651,0.7,cycling intervention
+2027,copd,4022,4,cycling intervention
+2027,coronary_heart_disease,1760,1.8,cycling intervention
+2027,dead,3978,4,cycling intervention
+2027,depression,33047,33,cycling intervention
+2027,diabetes,1892,1.9,cycling intervention
+2027,endometrial_cancer,156,0.2,cycling intervention
+2027,esophageal_cancer,160,0.2,cycling intervention
+2027,gastric_cardia_cancer,87,0.1,cycling intervention
+2027,head_neck_cancer,166,0.2,cycling intervention
+2027,healthy,38930,38.9,cycling intervention
+2027,liver_cancer,97,0.1,cycling intervention
+2027,lung_cancer,658,0.7,cycling intervention
+2027,myeloid_leukemia,6,0,cycling intervention
+2027,myeloma,71,0.1,cycling intervention
+2027,null,14965,15,cycling intervention
+2027,parkinson,247,0.2,cycling intervention
+2027,stroke,938,0.9,cycling intervention
+2028,all_cause_dementia,1732,1.7,cycling intervention
+2028,bladder_cancer,219,0.2,cycling intervention
+2028,breast_cancer,719,0.7,cycling intervention
+2028,colon_cancer,718,0.7,cycling intervention
+2028,copd,4515,4.5,cycling intervention
+2028,coronary_heart_disease,1953,2,cycling intervention
+2028,dead,4591,4.6,cycling intervention
+2028,depression,36040,36,cycling intervention
+2028,diabetes,2119,2.1,cycling intervention
+2028,endometrial_cancer,177,0.2,cycling intervention
+2028,esophageal_cancer,171,0.2,cycling intervention
+2028,gastric_cardia_cancer,96,0.1,cycling intervention
+2028,head_neck_cancer,179,0.2,cycling intervention
+2028,healthy,34727,34.7,cycling intervention
+2028,liver_cancer,112,0.1,cycling intervention
+2028,lung_cancer,734,0.7,cycling intervention
+2028,myeloid_leukemia,8,0,cycling intervention
+2028,myeloma,79,0.1,cycling intervention
+2028,null,15076,15.1,cycling intervention
+2028,parkinson,282,0.3,cycling intervention
+2028,stroke,1041,1,cycling intervention
+2029,all_cause_dementia,1912,1.9,cycling intervention
+2029,bladder_cancer,236,0.2,cycling intervention
+2029,breast_cancer,790,0.8,cycling intervention
+2029,colon_cancer,789,0.8,cycling intervention
+2029,copd,5003,5,cycling intervention
+2029,coronary_heart_disease,2171,2.2,cycling intervention
+2029,dead,5168,5.2,cycling intervention
+2029,depression,38693,38.7,cycling intervention
+2029,diabetes,2314,2.3,cycling intervention
+2029,endometrial_cancer,192,0.2,cycling intervention
+2029,esophageal_cancer,192,0.2,cycling intervention
+2029,gastric_cardia_cancer,109,0.1,cycling intervention
+2029,head_neck_cancer,194,0.2,cycling intervention
+2029,healthy,30969,31,cycling intervention
+2029,liver_cancer,117,0.1,cycling intervention
+2029,lung_cancer,826,0.8,cycling intervention
+2029,myeloid_leukemia,9,0,cycling intervention
+2029,myeloma,96,0.1,cycling intervention
+2029,null,15272,15.3,cycling intervention
+2029,parkinson,307,0.3,cycling intervention
+2029,stroke,1149,1.1,cycling intervention
+2030,all_cause_dementia,2092,2.1,cycling intervention
+2030,bladder_cancer,252,0.3,cycling intervention
+2030,breast_cancer,854,0.9,cycling intervention
+2030,colon_cancer,839,0.8,cycling intervention
+2030,copd,5389,5.4,cycling intervention
+2030,coronary_heart_disease,2394,2.4,cycling intervention
+2030,dead,5880,5.9,cycling intervention
+2030,depression,41116,41.1,cycling intervention
+2030,diabetes,2531,2.5,cycling intervention
+2030,endometrial_cancer,208,0.2,cycling intervention
+2030,esophageal_cancer,209,0.2,cycling intervention
+2030,gastric_cardia_cancer,122,0.1,cycling intervention
+2030,head_neck_cancer,205,0.2,cycling intervention
+2030,healthy,27602,27.6,cycling intervention
+2030,liver_cancer,133,0.1,cycling intervention
+2030,lung_cancer,901,0.9,cycling intervention
+2030,myeloid_leukemia,10,0,cycling intervention
+2030,myeloma,106,0.1,cycling intervention
+2030,null,15415,15.4,cycling intervention
+2030,parkinson,335,0.3,cycling intervention
+2030,stroke,1264,1.3,cycling intervention
+2031,all_cause_dementia,2235,2.2,cycling intervention
+2031,bladder_cancer,275,0.3,cycling intervention
+2031,breast_cancer,932,0.9,cycling intervention
+2031,colon_cancer,906,0.9,cycling intervention
+2031,copd,5773,5.8,cycling intervention
+2031,coronary_heart_disease,2578,2.6,cycling intervention
+2031,dead,6555,6.6,cycling intervention
+2031,depression,43194,43.2,cycling intervention
+2031,diabetes,2729,2.7,cycling intervention
+2031,endometrial_cancer,224,0.2,cycling intervention
+2031,esophageal_cancer,228,0.2,cycling intervention
+2031,gastric_cardia_cancer,136,0.1,cycling intervention
+2031,head_neck_cancer,220,0.2,cycling intervention
+2031,healthy,24566,24.6,cycling intervention
+2031,liver_cancer,153,0.2,cycling intervention
+2031,lung_cancer,978,1,cycling intervention
+2031,myeloid_leukemia,11,0,cycling intervention
+2031,myeloma,113,0.1,cycling intervention
+2031,null,15686,15.7,cycling intervention
+2031,parkinson,368,0.4,cycling intervention
+2031,stroke,1380,1.4,cycling intervention
+2032,all_cause_dementia,2386,2.4,cycling intervention
+2032,bladder_cancer,299,0.3,cycling intervention
+2032,breast_cancer,993,1,cycling intervention
+2032,colon_cancer,961,1,cycling intervention
+2032,copd,6197,6.2,cycling intervention
+2032,coronary_heart_disease,2783,2.8,cycling intervention
+2032,dead,7242,7.2,cycling intervention
+2032,depression,45106,45.1,cycling intervention
+2032,diabetes,2908,2.9,cycling intervention
+2032,endometrial_cancer,236,0.2,cycling intervention
+2032,esophageal_cancer,243,0.2,cycling intervention
+2032,gastric_cardia_cancer,150,0.1,cycling intervention
+2032,head_neck_cancer,229,0.2,cycling intervention
+2032,healthy,21822,21.8,cycling intervention
+2032,liver_cancer,165,0.2,cycling intervention
+2032,lung_cancer,1052,1.1,cycling intervention
+2032,myeloid_leukemia,13,0,cycling intervention
+2032,myeloma,113,0.1,cycling intervention
+2032,null,15994,16,cycling intervention
+2032,parkinson,400,0.4,cycling intervention
+2032,stroke,1454,1.5,cycling intervention
+2033,all_cause_dementia,2586,2.6,cycling intervention
+2033,bladder_cancer,317,0.3,cycling intervention
+2033,breast_cancer,1068,1.1,cycling intervention
+2033,colon_cancer,1034,1,cycling intervention
+2033,copd,6550,6.6,cycling intervention
+2033,coronary_heart_disease,2976,3,cycling intervention
+2033,dead,7978,8,cycling intervention
+2033,depression,46917,46.9,cycling intervention
+2033,diabetes,3083,3.1,cycling intervention
+2033,endometrial_cancer,256,0.3,cycling intervention
+2033,esophageal_cancer,267,0.3,cycling intervention
+2033,gastric_cardia_cancer,155,0.2,cycling intervention
+2033,head_neck_cancer,248,0.2,cycling intervention
+2033,healthy,19121,19.1,cycling intervention
+2033,liver_cancer,173,0.2,cycling intervention
+2033,lung_cancer,1142,1.1,cycling intervention
+2033,myeloid_leukemia,14,0,cycling intervention
+2033,myeloma,127,0.1,cycling intervention
+2033,null,16341,16.3,cycling intervention
+2033,parkinson,434,0.4,cycling intervention
+2033,stroke,1578,1.6,cycling intervention
+2034,all_cause_dementia,2782,2.8,cycling intervention
+2034,bladder_cancer,342,0.3,cycling intervention
+2034,breast_cancer,1107,1.1,cycling intervention
+2034,colon_cancer,1116,1.1,cycling intervention
+2034,copd,6924,6.9,cycling intervention
+2034,coronary_heart_disease,3131,3.1,cycling intervention
+2034,dead,8757,8.8,cycling intervention
+2034,depression,48526,48.5,cycling intervention
+2034,diabetes,3233,3.2,cycling intervention
+2034,endometrial_cancer,273,0.3,cycling intervention
+2034,esophageal_cancer,284,0.3,cycling intervention
+2034,gastric_cardia_cancer,159,0.2,cycling intervention
+2034,head_neck_cancer,266,0.3,cycling intervention
+2034,healthy,16809,16.8,cycling intervention
+2034,liver_cancer,193,0.2,cycling intervention
+2034,lung_cancer,1198,1.2,cycling intervention
+2034,myeloid_leukemia,14,0,cycling intervention
+2034,myeloma,132,0.1,cycling intervention
+2034,null,16733,16.7,cycling intervention
+2034,parkinson,459,0.5,cycling intervention
+2034,stroke,1663,1.7,cycling intervention
+2035,all_cause_dementia,2923,2.9,cycling intervention
+2035,bladder_cancer,379,0.4,cycling intervention
+2035,breast_cancer,1182,1.2,cycling intervention
+2035,colon_cancer,1186,1.2,cycling intervention
+2035,copd,7262,7.3,cycling intervention
+2035,coronary_heart_disease,3283,3.3,cycling intervention
+2035,dead,9532,9.5,cycling intervention
+2035,depression,49906,49.9,cycling intervention
+2035,diabetes,3380,3.4,cycling intervention
+2035,endometrial_cancer,284,0.3,cycling intervention
+2035,esophageal_cancer,299,0.3,cycling intervention
+2035,gastric_cardia_cancer,163,0.2,cycling intervention
+2035,head_neck_cancer,284,0.3,cycling intervention
+2035,healthy,14739,14.7,cycling intervention
+2035,liver_cancer,199,0.2,cycling intervention
+2035,lung_cancer,1258,1.3,cycling intervention
+2035,myeloid_leukemia,14,0,cycling intervention
+2035,myeloma,143,0.1,cycling intervention
+2035,null,17135,17.1,cycling intervention
+2035,parkinson,482,0.5,cycling intervention
+2035,stroke,1754,1.8,cycling intervention
+2036,all_cause_dementia,3070,3.1,cycling intervention
+2036,bladder_cancer,409,0.4,cycling intervention
+2036,breast_cancer,1241,1.2,cycling intervention
+2036,colon_cancer,1258,1.3,cycling intervention
+2036,copd,7653,7.7,cycling intervention
+2036,coronary_heart_disease,3415,3.4,cycling intervention
+2036,dead,10290,10.3,cycling intervention
+2036,depression,51191,51.2,cycling intervention
+2036,diabetes,3538,3.5,cycling intervention
+2036,endometrial_cancer,301,0.3,cycling intervention
+2036,esophageal_cancer,321,0.3,cycling intervention
+2036,gastric_cardia_cancer,169,0.2,cycling intervention
+2036,head_neck_cancer,299,0.3,cycling intervention
+2036,healthy,12830,12.8,cycling intervention
+2036,liver_cancer,202,0.2,cycling intervention
+2036,lung_cancer,1331,1.3,cycling intervention
+2036,myeloid_leukemia,13,0,cycling intervention
+2036,myeloma,145,0.1,cycling intervention
+2036,null,17598,17.6,cycling intervention
+2036,parkinson,503,0.5,cycling intervention
+2036,stroke,1820,1.8,cycling intervention
+2037,all_cause_dementia,3261,3.3,cycling intervention
+2037,bladder_cancer,430,0.4,cycling intervention
+2037,breast_cancer,1285,1.3,cycling intervention
+2037,colon_cancer,1325,1.3,cycling intervention
+2037,copd,7963,8,cycling intervention
+2037,coronary_heart_disease,3566,3.6,cycling intervention
+2037,dead,11114,11.1,cycling intervention
+2037,depression,52344,52.3,cycling intervention
+2037,diabetes,3711,3.7,cycling intervention
+2037,endometrial_cancer,305,0.3,cycling intervention
+2037,esophageal_cancer,342,0.3,cycling intervention
+2037,gastric_cardia_cancer,177,0.2,cycling intervention
+2037,head_neck_cancer,317,0.3,cycling intervention
+2037,healthy,11147,11.1,cycling intervention
+2037,liver_cancer,209,0.2,cycling intervention
+2037,lung_cancer,1394,1.4,cycling intervention
+2037,myeloid_leukemia,15,0,cycling intervention
+2037,myeloma,148,0.1,cycling intervention
+2037,null,18054,18.1,cycling intervention
+2037,parkinson,529,0.5,cycling intervention
+2037,stroke,1885,1.9,cycling intervention
+2038,all_cause_dementia,3402,3.4,cycling intervention
+2038,bladder_cancer,442,0.4,cycling intervention
+2038,breast_cancer,1332,1.3,cycling intervention
+2038,colon_cancer,1390,1.4,cycling intervention
+2038,copd,8206,8.2,cycling intervention
+2038,coronary_heart_disease,3710,3.7,cycling intervention
+2038,dead,11939,11.9,cycling intervention
+2038,depression,53376,53.4,cycling intervention
+2038,diabetes,3877,3.9,cycling intervention
+2038,endometrial_cancer,319,0.3,cycling intervention
+2038,esophageal_cancer,356,0.4,cycling intervention
+2038,gastric_cardia_cancer,182,0.2,cycling intervention
+2038,head_neck_cancer,334,0.3,cycling intervention
+2038,healthy,9633,9.6,cycling intervention
+2038,liver_cancer,220,0.2,cycling intervention
+2038,lung_cancer,1460,1.5,cycling intervention
+2038,myeloid_leukemia,14,0,cycling intervention
+2038,myeloma,156,0.2,cycling intervention
+2038,null,18546,18.5,cycling intervention
+2038,parkinson,553,0.6,cycling intervention
+2038,stroke,1930,1.9,cycling intervention
+2039,all_cause_dementia,3513,3.5,cycling intervention
+2039,bladder_cancer,452,0.5,cycling intervention
+2039,breast_cancer,1400,1.4,cycling intervention
+2039,colon_cancer,1448,1.4,cycling intervention
+2039,copd,8485,8.5,cycling intervention
+2039,coronary_heart_disease,3846,3.8,cycling intervention
+2039,dead,12773,12.8,cycling intervention
+2039,depression,54320,54.3,cycling intervention
+2039,diabetes,4041,4,cycling intervention
+2039,endometrial_cancer,322,0.3,cycling intervention
+2039,esophageal_cancer,383,0.4,cycling intervention
+2039,gastric_cardia_cancer,194,0.2,cycling intervention
+2039,head_neck_cancer,337,0.3,cycling intervention
+2039,healthy,8348,8.3,cycling intervention
+2039,liver_cancer,227,0.2,cycling intervention
+2039,lung_cancer,1521,1.5,cycling intervention
+2039,myeloid_leukemia,14,0,cycling intervention
+2039,myeloma,162,0.2,cycling intervention
+2039,null,19040,19,cycling intervention
+2039,parkinson,572,0.6,cycling intervention
+2039,stroke,2008,2,cycling intervention
