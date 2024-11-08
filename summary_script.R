@@ -7,9 +7,16 @@ require(tictoc)
 # Set seed
 set.seed(1024)
 
-health_base <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv")
+# health_base <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv")
+# 
+# health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_fixBug_processed.csv")
 
-health_cyc <- read_csv("C:/Users/Ali/RMIT University/JIBE working group - simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_fixBug_processed.csv")
+
+directory <- "C:/Users/mbzd2/OneDrive - RMIT University/JIBE/JIBE-WP6/healthmicrosim/"
+
+health_base <- read_csv(paste0(directory, "manchester/simulationResults/ForUrbanTransition/reference/health/04_death_and_disease/pp_healthDiseaseTracker_2039_fixBug_processed.csv"))
+
+health_cyc <- read_csv(paste0(directory, "manchester/simulationResults/ForUrbanTransition/cycleIntervention/health/04_death_and_disease/pp_healthDiseaseTracker_2039_new_fixBug_processed.csv"))
 
 # Set sample size
 sample_size <- 1000000
@@ -56,7 +63,12 @@ ggplot(states_base_sum) +
   geom_col() +
   scale_fill_hue(direction = 1) +
   theme_minimal() +
-  facet_wrap(vars(value))
+  facet_wrap(vars(value), scales = "free_y") +
+  labs(x = "Year", y = "NV", fill = "Value") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 4))
+
+
+
 
 
 states_base_freq <- states_base_sum |>  
@@ -97,24 +109,65 @@ ggplot(states_cyc_freq) +
 
 combine_summary <- bind_rows(states_base_sum, states_cyc_sum) |> mutate(scenario = factor(scenario, levels = c("reference", "cycling intervention")))
 
-plotly::ggplotly(
-  
-  combine_summary %>%
-    filter(freq >= 2) %>%
-    ggplot() +
-    aes(x = name, y = nv, fill = scenario) +
-    geom_bar(stat = "summary", fun = "sum", position = "dodge2") +
-    scale_fill_hue(direction = 1) +
-    coord_flip() +
-    theme_minimal() +
-    geom_text(aes(label = nv),
-              position = position_dodge(width = .9), size = 2) +
-    facet_wrap(vars(value)) +  
-    labs(x = "diseases", y = "values")
-  
-  )
+# plotly::ggplotly(
+#   
+#   combine_summary %>%
+#     filter(freq >= 2) %>%
+#     ggplot() +
+#     aes(x = name, y = nv, fill = scenario) +
+#     geom_bar(stat = "summary", fun = "sum", position = "dodge2") +
+#     scale_fill_hue(direction = 1) +
+#     coord_flip() +
+#     theme_minimal() +
+#     geom_text(aes(label = nv),
+#               position = position_dodge(width = .9), size = 2) +
+#     facet_wrap(vars(value)) +  
+#     labs(x = "diseases", y = "values")
+#   
+#   )
+
+
+## Alternative
+
+
+combine_summary %>%
+  filter(value %in% c("breast_cancer", "coronary_heart_disease", "lung_cancer")) %>%  # keep some only for ilustration
+  ggplot() +
+  aes(y = name, x = nv, fill = scenario) +  # Map `nv` to x and `name` to y
+  geom_bar(stat = "summary", fun = "sum", position = "dodge2") +
+  scale_fill_hue(direction = 1) +
+  theme_minimal() +
+  geom_text(aes(label = nv),
+            position = position_dodge(width = 0.9), size = 2, hjust = -0.2) +  # Adjust text position if needed
+  facet_wrap(vars(value), scales = "free_x") +  # Allow x-axis to vary by facet
+  labs(x = "Values", y = "Diseases")
+
+
+difference_diseases <- combine_summary %>% 
+  group_by(value, scenario) %>%
+  summarise(total=sum(nv)) %>%
+  ungroup() %>%
+  pivot_wider(names_from = scenario,
+              values_from = total) %>%
+  mutate(difference=(reference - `cycling intervention`)/reference)
+
+
+
+
+write.csv(difference_diseases, paste0(directory, "manchester/simulationResults/ForUrbanTransition/samples/diseases.csv"))
 
 tbl <- combine_summary |> filter(!value %in% c("dead", "null")) |> group_by(scenario, name) |> summarise(count = sum(nv))
+
+reference_lifeyears <- tbl %>% filter(scenario == "reference")
+
+ref_lf <- sum(reference_lifeyears$count)
+
+ref_sc <- sum(cycle_lifeyears$count)
+
+cycle_lifeyears <- tbl %>% filter(scenario == "cycling intervention")
+
+
+# Don't present on below
 
 g <- ggplot(tbl) +
   aes(x = name, y = count, fill = scenario) +
