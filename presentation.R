@@ -129,6 +129,8 @@ pm25_scenarios <- ggplot(exposure, aes(x = scenario, y = exposure_normalised_pm2
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="pm25_scenarios.svg", plot=pm25_scenarios, width=12, height=8)
+
 # Age
 
 pm25_age <- ggplot(exposure, aes(x = age_group, y = exposure_normalised_pm25, fill = scenario)) +
@@ -147,6 +149,8 @@ pm25_age <- ggplot(exposure, aes(x = age_group, y = exposure_normalised_pm25, fi
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="pm25_age.svg", plot=pm25_age, width=12, height=8)
+
 # Gender
 
 pm25_gender <- ggplot(exposure, aes(x = gender, y = exposure_normalised_pm25, fill = scenario)) +
@@ -164,6 +168,10 @@ pm25_gender <- ggplot(exposure, aes(x = gender, y = exposure_normalised_pm25, fi
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="pm25_gender.svg", plot=pm25_gender, width=12, height=8)
+
+# IMD
+
 pm25_imd <- ggplot(exposure, aes(x = imd, y = exposure_normalised_pm25, fill = scenario)) +
   geom_boxplot() +
   labs(
@@ -179,6 +187,8 @@ pm25_imd <- ggplot(exposure, aes(x = imd, y = exposure_normalised_pm25, fill = s
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="pm25_imd.svg", plot=pm25_imd, width=12, height=8)
 
 # No2
 
@@ -196,6 +206,8 @@ no2_scenarios <- ggplot(exposure, aes(x = scenario, y = exposure_normalised_no2,
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="no2_scenarios.svg", plot=no2_scenarios, width=12, height=8)
 
 # Age
 
@@ -215,6 +227,8 @@ no2_age <- ggplot(exposure, aes(x = age_group, y = exposure_normalised_no2, fill
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="no2_age.svg", plot=no2_age, width=12, height=8)
+
 # Gender
 
 no2_gender <- ggplot(exposure, aes(x = gender, y = exposure_normalised_no2, fill = scenario)) +
@@ -231,6 +245,8 @@ no2_gender <- ggplot(exposure, aes(x = gender, y = exposure_normalised_no2, fill
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="no2_gender.svg", plot=no2_gender, width=12, height=8)
 
 #IMD
 
@@ -250,6 +266,8 @@ no2_imd <- ggplot(exposure, aes(x = imd, y = exposure_normalised_no2, fill = sce
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="no2_imd.svg", plot=no2_imd, width=12, height=8)
+
 # mmetHR
 
 mmet_scenarios <- ggplot(exposure, aes(x = scenario, y = total_mmetHr, fill = scenario)) +
@@ -266,6 +284,8 @@ mmet_scenarios <- ggplot(exposure, aes(x = scenario, y = total_mmetHr, fill = sc
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="mmet_scenarios.svg", plot=mmet_scenarios, width=12, height=8)
 
 # Age
 
@@ -285,6 +305,8 @@ mmet_age <- ggplot(exposure, aes(x = age_group, y = total_mmetHr, fill = scenari
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
 
+ggsave(file="mmet_age.svg", plot=mmet_age, width=12, height=8)
+
 # Gender
 
 mmet_gender <- ggplot(exposure, aes(x = gender, y = total_mmetHr, fill = scenario)) +
@@ -301,6 +323,8 @@ mmet_gender <- ggplot(exposure, aes(x = gender, y = total_mmetHr, fill = scenari
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="mmet_gender.svg", plot=mmet_gender, width=12, height=8)
 
 #IMD
 
@@ -319,6 +343,8 @@ mmet_imd <- ggplot(exposure, aes(x = imd, y = total_mmetHr, fill = scenario)) +
     axis.text = element_text(face = "bold"),
     legend.text = element_text(face = "bold"),
     legend.title = element_text(face = "bold"))
+
+ggsave(file="mmet_imd.svg", plot=mmet_imd, width=12, height=8)
 
 # PM2.5 Table
 pm25_table <- exposure %>%
